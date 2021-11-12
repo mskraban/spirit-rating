@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-   <img src="https://i.imgur.com/eZgC40z.jpg" alt="Flaviar assignment">
+   <img src="https://i.imgur.com/kOoTOG3.jpg" alt="Flaviar assignment">
 </div>
 
 
