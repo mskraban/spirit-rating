@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Spirits rating - List{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-12 mb-5 mb-md-0">
+         <h1 class="h3 mb-3 font-weight-normal">Rated drinks</h1>
+            <ul class="list-group">
+                {% if ratings %}
+                    {% for rating in ratings %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            {{ rating.drinkName }}
+                            <span class="badge bg-primary rounded-pill">{{ rating.drinkRating }}</span>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    You have not rated any spirits yet.
+                {% endif %}
+            </ul>
+
+        </div>
+        <div class="col-12 col-md-4 offset-md-2">
+            <h2 class="h3 mb-3 font-weight-normal">Add new rating</h2>
+            {{ form(rating_form) }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

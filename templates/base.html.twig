@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+         {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{% set pageName = app.request.uri | split('/') | last %}
+
+{% if app.user %}
+    <nav class="navbar navbar-light bg-light shadow-sm p-3 mb-5 bg-body rounded {% if pageName == "rating" %}sticky-top{% else %}fixed-top{% endif %}">
+        <div class="container-fluid">
+            <a class="navbar-brand">🥃 Spirits rating</a>
+            <div class="d-flex align-items-center">
+                <p class="mb-0 d-none d-md-block">You are logged in as {{ app.user.username }} &nbsp;&nbsp;</p> <a
+                    href="{{ path('app_logout') }}" class="btn btn-outline-primary">Logout</a>
+            </div>
+        </div>
+    </nav>
+{% endif %}
+{% block body %}{% endblock %}
+{% block javascripts %}
+     {{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
+</html>
