@@ -41,6 +41,7 @@ To start using the project, you need to have installed composer and yarn package
 5. Start server ```symfony server:start```
 6. Create database ```php bin/console doctrine:database:create```
 7. Prepare table ```php bin/console doctrine:migrations:migrate```
+8. Compile build ```npm run build```
 
 
 
