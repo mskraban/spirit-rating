@@ -1,5 +1,4 @@
 # Flaviar - PHP Backend Engineer
-## Test Assignment
 
 <!-- PROJECT LOGO -->
 <br />
