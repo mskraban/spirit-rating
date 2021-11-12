@@ -50,6 +50,21 @@ To start using the project, you need to have installed composer and yarn package
 User have to register and create account. After registering user will have to login using created account. After login user is redirected to rating page, where user rate spirits after tasting them.
 
 
+<!-- USAGE EXAMPLES -->
+## 📔 API endpoints
+
+List of all available REST API endpoints.
+
+| Request type | URL | Description |
+| ------ | ------ |------ |
+| GET | ```/api/ratings``` |Retrieves the collection of Rating resources
+| POST | ```/api/ratings``` |Creates a Rating resource
+| GET | ```/api/ratings/{id}``` |Retrieves the Rating resource
+| PUT | ```/api/ratings/{id}``` |Replaces the Rating resource
+| DELETE | ```/api/ratings/{id}``` |Removes the Rating resource
+| PATCH | ```/api/ratings/{id}``` |Updates the Rating resource
+
+
 <!-- Notes -->
 ## ❗ Notes
 
