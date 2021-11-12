@@ -1,4 +1,4 @@
-# Flaviar - Symfony full stack assignment
+# Flaviar - PHP Backend Enfineer assignment
 
 <!-- PROJECT LOGO -->
 <br />
