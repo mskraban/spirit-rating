@@ -53,6 +53,4 @@ User have to register and create account. After registering user will have to lo
 <!-- Notes -->
 ## ❗ Notes
 
-- Half a year gift membership is always calculated into price.
-- Parallax on form section background image is enabled and it scales image in both X and Y directions.
 - In case you get error "The metadata storage is not up to date" remove your database version provider from  .env file at ```?serverVersion```
