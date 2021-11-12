@@ -11,17 +11,14 @@
 <!-- ABOUT THE PROJECT -->
 ## 📝 About The Assignment
 
-Project is providing "pixel perfect" mobile first design of the page, provided in
-accompanying links with implemented backend functionality. Index page contains a form that is coded with Vue. It takes values depending on user choises and validates them if they are filled out. Then it sends them to backend via XHR reqest. On backend we prepared endpoint /order where we decode json and store it in database.
+Project is providing simple Symfony web application that enables users to rate different spirits after tasting them.
 
 
 
 ### 🧰 Built With
 
-* [Vue.js](https://vuejs.org/)
 * [Symfony](https://symfony.com/)
 * [Bootstrap](https://getbootstrap.com)
-* [SCSS](https://sass-lang.com/)
 
 
 
@@ -50,9 +47,7 @@ To start using the project, you need to have installed composer and yarn package
 <!-- USAGE EXAMPLES -->
 ## 🖱️ Usage
 
-User have to select between two membership packages and. Depending on user pick, price at the bottom of form is recalculated. 
-User can pick between two send to options. If user selects "Send to me" then there are displayed only message and from input fields. If user selects "Send to them", then input field "to their name" is added. 
-
+User have to register and create account. After registering user will have to login using created account. After login user is redirected to rating page, where user rate spirits after tasting them.
 
 
 <!-- Notes -->
